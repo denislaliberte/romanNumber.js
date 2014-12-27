@@ -23,4 +23,8 @@ describe("RomanNumber", function() {
     expect(RomanNumber(4)).toEqual('IV');
     }
   );
+  it("should return IX for 9", function() {
+    expect(RomanNumber(9)).toEqual('IX');
+    }
+  );
 });

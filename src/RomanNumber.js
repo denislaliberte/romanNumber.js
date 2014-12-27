@@ -5,6 +5,9 @@ function RomanNumber(Arabic) {
   if(Arabic >=10){
     return "X" + RomanNumber(Arabic -10);
   }
+  if(Arabic == 9) {
+    return RomanNumber(Arabic-10) + "X";
+  }
   if(Arabic >= 5){
     return "V" + RomanNumber(Arabic -5);
   }
