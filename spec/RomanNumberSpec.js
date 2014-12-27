@@ -39,9 +39,18 @@ describe("RomanNumber", function() {
     expect(RomanNumber(14)).toEqual('XIV');
     }
   );
-  it("shloud convert more arabic to roman number", function() {
+  it("shloud convert arabic to roman number between 1 and 100", function() {
     expect(RomanNumber(16)).toEqual('XVI');
     expect(RomanNumber(12)).toEqual('XII');
-    expect(RomanNumber(90)).toEqual('XC')
+    expect(RomanNumber(90)).toEqual('XC');
+    expect(RomanNumber(49)).toEqual('XLIX');
+  });
+  it("should convert number between 100 and 1000 ", function() {
+    expect(RomanNumber(500)).toEqual('D');
+    expect(RomanNumber(454)).toEqual('CDLIV');
+    expect(RomanNumber(1000)).toEqual('M');
+    expect(RomanNumber(3000)).toEqual('MMM');
+    expect(RomanNumber(900)).toEqual('CM');
+    expect(RomanNumber(1956)).toEqual('MCMLVI');
   });
 });
