@@ -1,4 +1,7 @@
 function RomanNumber(Arabic) {
+  if(Arabic >=100) {
+    return "C" + RomanNumber(Arabic -100);
+  }
   if(Arabic >=50){
     return "L" + RomanNumber(Arabic -50);
   }
@@ -21,5 +24,6 @@ function RomanNumber(Arabic) {
     return "I" + RomanNumber(Arabic -1);
   }
   return ""
-
 }
+
+
