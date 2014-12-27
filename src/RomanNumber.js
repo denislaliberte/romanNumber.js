@@ -1,7 +1,7 @@
 function RomanNumber(Arabic) {
   association = {
-    'value':  [ 100, 50,  40,   10,  9,     5,  4,     1],
-    'symbol': [ 'C', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ]
+    'value':  [ 100, 90,   50,  40,   10,  9,     5,  4,     1 ],
+    'symbol': [ 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ]
   }
   function closure(Arabic,index) {
     if(Arabic >= association.value[index] ) {

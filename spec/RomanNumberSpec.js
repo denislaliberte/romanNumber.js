@@ -39,4 +39,9 @@ describe("RomanNumber", function() {
     expect(RomanNumber(14)).toEqual('XIV');
     }
   );
+  it("shloud convert more arabic to roman number", function() {
+    expect(RomanNumber(16)).toEqual('XVI');
+    expect(RomanNumber(12)).toEqual('XII');
+    expect(RomanNumber(90)).toEqual('XC')
+  });
 });
