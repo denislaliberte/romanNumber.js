@@ -35,4 +35,8 @@ describe("RomanNumber", function() {
     expect(RomanNumber(100)).toEqual('C');
     }
   );
+  it("should return XIV for 14", function() {
+    expect(RomanNumber(14)).toEqual('XIV');
+    }
+  );
 });

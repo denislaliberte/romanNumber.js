@@ -1,7 +1,23 @@
 function RomanNumber(Arabic) {
-  if(Arabic >=100) {
-    return "C" + RomanNumber(Arabic -100);
+  //return old(Arabic);
+  association = {
+    'value': [100],
+    'symbol': ['C']
   }
+  return asdf(Arabic,association,0);
+}
+
+function asdf(Arabic,association,index) {
+  if(Arabic>=association.value[index] ) {
+    return association.symbol[index] + asdf(Arabic-association.value[index],association,index +1)
+  }
+  return old(Arabic);
+}
+
+function old(Arabic) {
+ //if(Arabic >=100) {
+ //   return "C" + RomanNumber(Arabic -100);
+ // }
   if(Arabic >=50){
     return "L" + RomanNumber(Arabic -50);
   }
@@ -24,6 +40,7 @@ function RomanNumber(Arabic) {
     return "I" + RomanNumber(Arabic -1);
   }
   return ""
+
 }
 
 
