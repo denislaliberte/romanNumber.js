@@ -11,4 +11,8 @@ describe("RomanNumber", function() {
     expect(RomanNumber(5)).toEqual('V');
     }
   );
+  it("should return X for 10", function() {
+    expect(RomanNumber(10)).toEqual('X');
+    }
+  );
 });
