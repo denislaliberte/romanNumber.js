@@ -27,4 +27,8 @@ describe("RomanNumber", function() {
     expect(RomanNumber(9)).toEqual('IX');
     }
   );
+  it("should return XL for 40", function() {
+    expect(RomanNumber(40)).toEqual('XL');
+    }
+  );
 });

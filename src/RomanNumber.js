@@ -2,7 +2,10 @@ function RomanNumber(Arabic) {
   if(Arabic >=50){
     return "L" + RomanNumber(Arabic -50);
   }
-  if(Arabic >=10){
+  if(Arabic ==40) {
+    return RomanNumber(Arabic-50) + "L";
+  }
+  if(Arabic >=10 || Arabic == -10){
     return "X" + RomanNumber(Arabic -10);
   }
   if(Arabic == 9) {
