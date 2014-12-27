@@ -1,8 +1,11 @@
 function RomanNumber(Arabic) {
   if(Arabic ==0) {
     return "";
-  }else {
-    return "I" + RomanNumber(Arabic -1)
+  }else if(Arabic >= 5){
+    return "V" + RomanNumber(Arabic -5);
+  }
+  else {
+    return "I" + RomanNumber(Arabic -1);
   }
 
 }
